@@ -1,0 +1,22 @@
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		'sectionsColor': ['#59ABE3', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+		'navigation': true,
+		'navigationPosition': 'right',
+		'anchors': ['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'fithPage'],
+
+		afterLoad: function(anchorLink, index){
+		},
+
+		onLeave: function(index, newIndex, direction){
+		},
+
+		/*
+		Needed to maintain the fixed position of the element
+		due to problems using translate3d and fixed elements.
+		*/
+		afterRender: function(){
+		}
+
+	});
+});
