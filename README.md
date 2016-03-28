@@ -1,5 +1,15 @@
 #Play Site
-*This is a line
-**This is also a line
+*How to build this
 
-So downlaoad this lot. and gulp from the root (not app) directory. it should spring to life.
+So downlaoad this lot.
+
+In the root directory, from the console, type:
+
+npm install[enter]
+
+if all is good, type:
+
+gulp[enter]
+
+
+voila
