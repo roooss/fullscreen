@@ -131,14 +131,14 @@ gulp.task('build:cleanfolder', function (cb) {
 });
 
 // task to create build directory of all files
-gulp.task('build:copy', ['build:cleanfolder'], function(){
+gulp.task('build:copy', function(){
     return gulp.src('app/**/*/')
     .pipe(gulp.dest('build/'));
 });
 
 // task to removed unwanted build files
 // list all files and directories here that you don't want included
-gulp.task('build:remove', ['build:copy'], function (cb) {
+gulp.task('build:remove', function (cb) {
 	del(config.buildFilesFoldersRemove, cb);
 });
 
