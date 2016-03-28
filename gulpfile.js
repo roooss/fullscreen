@@ -131,7 +131,7 @@ gulp.task('build:cleanfolder', function (cb) {
 });
 
 // task to create build directory of all files
-gulp.task('build:copy', ['build:cleanfolder'], function(){
+gulp.task('build:copy', function(){
     return gulp.src('app/**/*/')
     .pipe(gulp.dest('build/'));
 });
